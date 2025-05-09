@@ -16,5 +16,7 @@ namespace Hello.NET.Web.Pages
         {
 
         }
+
+        public string MySetting => System.Environment.GetEnvironmentVariable("MY_SETTING") ?? string.Empty;
     }
 }
